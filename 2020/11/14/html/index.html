@@ -14,10 +14,12 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="网站是指在因特网上根据一定的规则，使用HTML等制作的用于展示特定相关内容的网页集合 网页是网站中的“一页”,通常是HTML格式的文件，他要通过浏览器阅读 网页是构成网站的基本元素，通常由图片、链接、文字、声音、视频等元素组成。通常我们看到的网页，常见以.htm或.html后缀结尾的文件，因此俗称为HTML文件 浏览器内核（渲染引擎）：负责读取网页内容，整理讯息，计算网页显示方式并显示页面。 W">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/11/14/html/图像名">
 <meta property="article:published_time" content="2020-11-14T11:47:39.654Z">
-<meta property="article:modified_time" content="2020-11-14T11:59:16.708Z">
+<meta property="article:modified_time" content="2020-11-20T05:52:10.920Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/11/14/html/图像名">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -90,15 +92,148 @@
 <html>
    <head>
           <title>
+            我的第一个页面
           </title>
     <head>
-    <body>
+    <body>青春不常在，抓紧谈恋爱
      </body>
 </html>
+
+
+
+
+<p>在<head>标签中，可以通过<meta>标签的charset属性来规定HTML文档应该使用哪种字符编码。</p>
+<meta charset="UTF-8"/>
+UTF-8也被称为万国码，基本包含了全世界所有国家需要用到的字符。
+
+
+
+<h1>-<h6>标题等级 ；
+
+
+<p>段落标签</p>
+
+
+<p><br />换行标签</p>
+<p><strong>加粗</strong> ;  <b>加粗</b></p>
+<p><em>倾斜</em> ; <i>倾斜</i></p>
+<p><del>删除线</del> ; <s>删除</s></p>
+<p><ins>下划线</ins> ; <u>下划线</u></p>
+<div>和<span>无语义，单纯创造盒子，装内容
+
+<div>   </div>;  division的缩写，表示分割，分区； 一行只能放一个大盒子
+
+<p><span>   </span>   跨度，跨距；  一行可以有多个小盒子</p>
+<p>图像标签</p>
+<p><img src="图像名"> ;src为<img>标签的必须属性,用于指定图像文件的路径和文件名</p>
+<p>图像标签的其他属性:src-图片路径；alt-文本（替换文字，图片不能显示的文字）；title-文本（提示文本，鼠标放到图片上，显示文字）；width-像素（设置图像的宽度）；height-像素（设置图像的高度）；border-像素（设置边框粗细）</p>
+<p>相对路径分类：同级路径       如<img src=“baidu.gif”/><br>                       下一级路径  /   如<img src=“images/baidu.gif”/><br>                       上一级路径 ../  如<img src=“../baidu.gif”/></p>
+<p>链接的语法格式:<a href="跳转目标" target=“跳出方式”>文本或图像</a></p>
+<p>在链接文本的href属性中，设置属性值为#名字的形式，如<a href=“#two”>第二集</a></p>
+<p>找到目标位置标签，里面添加一个id属性=刚才的名字，如：&lt;h3 id“two”&gt;第2集介绍</h3></p>
+<p>表格的基本语法</p>
+<table>
+
+<pre><code> &lt;tr&gt;
+
+      &lt;th&gt;姓名&lt;/th&gt;         
+
+      &lt;td&gt;单元格内的文字&lt;/td&gt;
+
+ &lt;tr&gt;</code></pre>
+<table>
+
+<p>表格属性：  属性名    -&gt;    属性值      -&gt;         描述</p>
+<p>align  -&gt; left、center、right   -&gt;   固定表格相对周围元素的对齐方式</p>
+<p>border  -&gt; 1或””   -&gt;   规定表格单元是否拥有边框，默认为””，表示没有边框</p>
+<p>cellpadding   -&gt;   像素值   -&gt;   规定单元边沿与其内容之间的空白，默认1像素</p>
+<p>cellspacing     -&gt;  像素值   -&gt;   规定单元格之间的空白，默认2像素。</p>
+<p>width            -&gt;    像素值或百分比     -&gt;     规定表格的宽度</p>
+<thead></thead>：用于定义表格的头部。<thead>内部必须拥有<tr>标签。一般位于第一行。
+
+<p><thody></thody>:用于定义表格的主体，主要用于放数据本体。、</p>
+<p>以上标签都是放在<table></table>标签中。</p>
+<p>跨行合并：rowspan=“合并单元格数”</p>
+<p>跨列合并:  colspan=    “合并单元格数”</p>
+<p>无序列表</p>
+<ul>
+         <li></li>
+         <li></li>
+         <li></li>
+</ul>
+
+<p>*<strong>**</strong>里面只能包含li，使用较多</p>
+<p>有序列表</p>
+<ol>
+          <li></li>
+          <li></li>
+          <li></li>
+</ol>
+
+<p>*<strong>**</strong>里面只能包含li，使用相对较少</p>
+<p>自定义列表</p>
+<dl>
+         <dt>  </dt>
+         <dt>  </dt>
+         <dt>  </dt>
+<dl>
+
+
+<p><strong>**</strong>里面只能包含dt和dd。dt和dd里面可以放任何标签</p>
+<p>表单域：一个包含表单元素的区域。</p>
+<form action="url地址" method="提交方式"  nam="表单域名称">
+
+<p>  各种表单元素控件</p>
+</form>
+
+<p>属性——&gt;属性值——&gt;作用</p>
+<p>action  -&gt;  url地址   -&gt;   用于指定接收并处理表单数据的服务器程序的url地址</p>
+<p>method-&gt; get/post  -&gt;用于设置表单数据的提交方式，其取值为get或post</p>
+<p>name   -&gt;  名称   -&gt;   用于指定表单的名称，以区分同一个页面中的多个表单域。</p>
+<p><input>表单元素</p>
+<input type="属性值" />
+
+<p><input />标签为单标签</p>
+<p>type属性设置不同的属性值用来指定不同的控件类型</p>
+<p>属性值——&gt;描述</p>
+<p>button-&gt;定义可点击按钮</p>
+<p>checkbox-&gt;定义复选框</p>
+<p>file -&gt;定义输入字段和“浏览”按钮，供文件上传</p>
+<p>hidden -&gt;  定义隐藏的输入字段</p>
+<p>image  -&gt; 定义图像形式的提交按钮</p>
+<p>password -&gt;  定义密码字段，该字段中的字符被掩码</p>
+<p>radio  -&gt; 定义单选按钮</p>
+<p>reset -&gt;  定义重置按钮，重置按钮会清除表单中的所有数据</p>
+<p>submit   -&gt;   定义提交按钮。提交按钮会把表单数据发送到服务器。</p>
+<p>text  -&gt; 定义单行的输入字段，用户可以在其中输入文本。默认宽度为20字符</p>
+<p>textarea  -&gt;   定义多行输入字段</p>
+<p>除type外，<input>标签的其他常用属性如下</p>
+<p>属性——&gt; 属性值——&gt;描述</p>
+<p>neme-&gt; 用户自定义 -&gt;定义input元素的名字</p>
+<p>value -&gt;用户自定义 -&gt;guidinginput元素的值</p>
+<p>checked  -&gt; checked -&gt;规定input元素首次加载时应当被选中</p>
+<p>maxlength   -&gt;正整数 -&gt;  规定输入字段中的字符的最大长度 </p>
+<p>label标签    方便选择，与<input>配套使用</p>
+<p><label for="nan">男：</label></p>
+<input type="radio" id ="nan">
+
+
+<p><select>表单元素</p>
+<select>
+
+<pre><code>              &lt;option&gt;选项1&lt;/option&gt;
+
+              &lt;option&gt;选项1&lt;/option&gt;
+
+              &lt;option&gt;选项1&lt;/option&gt;</code></pre>
+</select>
+
+<p>在<option>定义selected=”selected”时，当前项即为默认选中项</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/11/14/html/" data-id="ckhhnkr7d0002l4vsgb2c3656" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/11/14/html/" data-id="ckhpul0jc0001u4vs31uy0a0v" class="article-share-link">Share</a>
       
       
     </footer>
