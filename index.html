@@ -64,6 +64,128 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-CSS" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/21/CSS/" class="article-date">
+  <time datetime="2020-11-21T05:45:59.958Z" itemprop="datePublished">2020-11-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/21/CSS/">CSS</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>CSS规则主要的构成部分:选择器以及一条或多条声明。</p>
+<p>选择器是用于指定CSS样式的HTML标签，花括号内是对该对象设置的具体样式</p>
+<p>属性和属性值以”键值对”的形式出现</p>
+<p>CSS代码风格</p>
+<p>样式格式书写</p>
+<p>  &lt;1&gt;紧凑格式</p>
+<pre><code>         h3   &#123; color: deeppink;font-size: 20px;&#125;</code></pre>
+<p>  &lt;2&gt;展开式</p>
+<pre><code>         h3   &#123;
+                       color: pink;
+                       font-size: 20px;
+                 &#125;</code></pre>
+<p>  &lt;3&gt;空格规范</p>
+<pre><code>          h3&#123;
+                   color: pink;
+              &#125;</code></pre>
+<p>(1)属性值前面，冒号后面，保留一个空格<br>(2)选择器（标签）和大括号中间保留空格</p>
+<p>CSS选择器的作用</p>
+<pre><code>   选择器就是根据不同需求把不同的标签选出来，这就是选择器的作用。简单来说，就是选择标签用的。
+
+    选择器分类
+
+      选择器分为基础选择器和复合选择器两大类
+
+      *基础选择器是由单个选择器组成的
+      *基础选择器又包括:标签选择器，类选择器，id选择器和通配符选择器</code></pre>
+<p>语法</p>
+<p>   标签名{<br>                 属性1：属性值1；<br>                 属性2：属性值2；<br>                 属性3：属性值3；<br>              }</p>
+<p>类选择器</p>
+<pre><code>     &lt;div class=&#39;red&#39;&gt;变红色&lt;/div&gt;
+
+       如果想要差异化选择不同的标签，单独选一个或者某几个标签，可以使用类选择器
+       类选择器在HTML中以class属性表示，在CSS中，类选择器以一个点“.”号显示。</code></pre>
+<p>id选择器</p>
+<pre><code>        与类选择器类似：样式“#”定义
+         class好比人的名字（可有多个）
+         id好比人的身份证（只能唯一的）</code></pre>
+<p>类选择器使用较多，id选择器一般用于页面唯一性的元素上，经常和javaScript搭配使用。</p>
+<p>通配符选择器</p>
+<p>CSS中，通配符选择器使用“*”定义，他表示选取页面中所有元素（标签）。</p>
+<p>语法</p>
+<p>*{<br>     属性1： 属性值1；<br> }</p>
+<p>CSS Fonts属性用于定义字体系列、大小、粗细、和文字样式（如斜体）</p>
+<p>CSS使用font-family属性定义文本的字体系列</p>
+<p>p { font-family: “微软雅黑”；}<br>div {font-family: Arial,”Microsoft Yahei”,”微软雅黑”；}</p>
+<p>CSS使用font-size属性定义字体大小。</p>
+<p>P {<br>       font-size: 20px;<br>   }</p>
+<p>body {<br>             font: font-style  font-weight  font-size/line-height  font-family;<br>          }</p>
+<p>使用font属性时，必须按照上面语法格式中的顺序书写，不能更换顺序，并且各个属性间以空格隔开<br>不需要设置的属性可以省略（取默认值），但必须保留font-size和font-family属性，否则font属性将不起作用</p>
+<p>属性——&gt;表示——&gt;注意点</p>
+<p>font-size——&gt;字号——&gt;我们通常用的单位是px像素，一定要跟上单位</p>
+<p>font-family——&gt;字体——&gt;实际工作中按照团队约定来写字体</p>
+<p>font-weight——&gt;字体粗细——&gt;记住加粗是700或者bold不加粗是normal或者400数字后不跟单位</p>
+<p>font-style——&gt;字体样式——&gt;倾斜是italic，不倾斜是normal工作中我们最常用normal</p>
+<p>font——&gt;字体连写——&gt;字体连写是有顺序额的 不能随意换位置  ；  其中字号和字体必须同时出现</p>
+<p>CSS Text属性 可以定义文本的外观，比如文本的颜色，对其文本，装饰文本，文本缩进，行间距等。</p>
+<p>text-align属性用于设置元素内文本内容的水平对齐方式</p>
+<p>div{<br>        text-align: center;<br>     }</p>
+<p>text-decoration属性规定添加到文本的修饰。可以给文本添加下划线，删除线，上划线等。</p>
+<p>div{<br>        text-decoration: underline;<br>     }<br>//none : 默认。没有修饰线； underlin：下划线。链接a自带下划线（常用）；  overlin：上划线。； line-through：删除线。</p>
+<p>text-indent属性用来指定文本的第一行缩进，通常是将段落的首行缩进。</p>
+<p>div {<br>        text-indent：10px；<br>        text-indent：2em；<br>      }</p>
+<p>line-heigh属性用于设置行间的距离（行高）。可以控制文字行与行之间的距离</p>
+<p>p {<br>     line-height：26px；<br>   }</p>
+<p>CSS的三种样式表</p>
+<p>按照CSS样式书写的位置（或者引入的方式），CSS样式表可以分为 三大类：</p>
+<p>&lt;1&gt;行内样式表<br>&lt;2&gt;内部样式表<br>&lt;3&gt;外部样式表</p>
+<p>内部：将所有的CSS代码抽取出来，单独放到一个<style>标签中。</p>
+<style>
+div {
+
+color: red;
+font-size: 12px;
+
+}
+</style>
+
+
+<p>行内：是在元素标签内部的style属性中设定CSS样式。适合于修改简单样式</p>
+<div style=“color：red；font-size：12px了；”>青春不常在，抓紧谈恋爱.</div>
+
+<p>外部样式表：<br>&lt;1&gt;新建一个后缀名为.css的样式文件，把所有CSS代码都放入此文件中。<br>&lt;2&gt;在HTML页面中，使用<link>标签引入这个文件</p>
+<link rel=”stylesheet“ href=”css文件路径“>
+
+<p>rel：定义当前文档与被链接文档之间的关系，在这里需要指定为”stylesheet“，表示被链接的文档是一个样式表文件。<br>href：定义所链接外部样式表文件的URL，可以说相对路径，也可以是绝对路径。</p>
+<p>使用外部样式表设定css，通常也被称为外链式或链接式引入，这种方式是开发中常用的方式</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/11/21/CSS/" data-id="ckhrc2pnu0000r0vsfdjye2ef" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-html" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/11/14/html/" class="article-date">
@@ -238,7 +360,7 @@ UTF-8也被称为万国码，基本包含了全世界所有国家需要用到的
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/11/14/html/" data-id="ckhpv16ba0001s4vsdvng6fxu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/11/14/html/" data-id="ckhrc2po40001r0vs3iq2cm7l" class="article-share-link">Share</a>
       
       
     </footer>
@@ -275,7 +397,7 @@ UTF-8也被称为万国码，基本包含了全世界所有国家需要用到的
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/10/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAblog/" data-id="ckhpv16bb0002s4vsdfbz1cvu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/10/31/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAblog/" data-id="ckhrc2po90003r0vs2yzz3ea1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -324,7 +446,7 @@ UTF-8也被称为万国码，基本包含了全世界所有国家需要用到的
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/10/31/hello-world/" data-id="ckhpv16b50000s4vs456gesmo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/10/31/hello-world/" data-id="ckhrc2po70002r0vs16f88out" class="article-share-link">Share</a>
       
       
     </footer>
@@ -363,6 +485,10 @@ UTF-8也被称为万国码，基本包含了全世界所有国家需要用到的
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/11/21/CSS/">CSS</a>
+          </li>
         
           <li>
             <a href="/2020/11/14/html/">html</a>
